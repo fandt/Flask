@@ -1,0 +1,14 @@
+<form action="{{ url_for('index3rep') }}" method='POST'>
+StartDate:<br />
+<input type="date" name="doritos"><br />
+EndDate:<br />
+<input type="date" name="oreos"><br />
+<input type="submit" value="submit"><br />
+</form>
+
+{% if fooResponse is not none %}
+	{{ fooResponse }}
+{% endif %}
+
+
+
